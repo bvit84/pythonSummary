@@ -13,6 +13,11 @@
 <h2>
     <a href="index.html">Python Summary</a>
 </h2>
+<p>
+    Python is an object oriented programming language.<br>
+    Almost everything in Python is an object, with its properties and methods.<br>
+    A Class is like an object constructor, or a "blueprint" for creating objects.
+</p>
 <table id = "summary">
     <colgroup>
         <col>
@@ -26,11 +31,18 @@
         <tr>
             <td>objects</td>
             <td>
-                Objects are things in memory that we can refer to by name.<br>
+                Objects are <strong>things in memory</strong> that we can refer 
+                to by name.<br>
                 * We can create objects in memory<br>
                 * We can use variable names to refer to objects<br>
                 * Objects have a type - and this type tells us what 
-                characteristics and behaviors the object can have.
+                characteristics and behaviors the object can have.<br>
+                Objects can also contain methods. Methods in objects 
+                are functions that belong to the object: 
+                NameOfObject.FunctionCall();<br>
+                <img src="media\initEx2.jpg" alt="__init__() function example"><br>
+                Also all variables in methods for a class are instance-level 
+                variables (used for each object).
                 <br>
             </td>
             <td>
@@ -53,6 +65,43 @@
                 y = myObj()<br>
                 x = isinstance(y, myObj)<br>
                 print(x) --> True
+            </td>
+        </tr>
+        <tr>
+            <td>type(object, bases, dict)</td>
+            <td>
+                Returns the type of the specified object.
+            </td>
+            <td>
+                a = ('abc', 'std'); print(type(a)) --> class 'tuple'
+            </td>
+        </tr>
+        <tr>
+            <td>
+                class className:<br>
+                x = 5
+            </td>
+            <td>
+                Creates a class named className, with a property named x.<br>
+                >>> MyClass = className() Will create a new object based on the 
+                className class, but now it also tells Python that from here 
+                forward the name MyClass will refer to that object.<br>
+                All classes have a function called __init__(), which is always 
+                executed when the class is being initiated, to create an object.<br>
+                Use the __init__() function to assign values to object properties
+                , or other operations that are necessary to do when the object is 
+                being created:<br>
+                >>> __init__(self, name) will require name variable when calling the 
+                class.<br>
+            </td>
+            <td>
+                <img src="media\initEx1.jpg" alt="__init__() function example"><br>
+                Note: The self parameter is a reference to the current instance 
+                of the class, and is used to access variables that belong to the 
+                class.<br>
+                It does not have to be named self , you can call it whatever you 
+                like, but it has to be the first parameter of any function in the 
+                class.
             </td>
         </tr>
     </tbody>
