@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+<head>
+    <title>Python Objects & Classes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/o&c.css">
+</head>
+<body>
+<h1>
+    Python Objects & Classes Summary
+</h1>
+<h2>
+    <a href="index.html">Python Summary</a>
+</h2>
+<table id = "summary">
+    <colgroup>
+        <col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Syntax</th>
+            <th>Definition</th>
+            <th>Examples</th>
+        </tr>
+        <tr>
+            <td>objects</td>
+            <td>
+                Objects are things in memory that we can refer to by name.<br>
+                * We can create objects in memory<br>
+                * We can use variable names to refer to objects<br>
+                * Objects have a type - and this type tells us what 
+                characteristics and behaviors the object can have.
+                <br>
+            </td>
+            <td>
+                >>> n = 300 (You've just created an integer object in memory, 
+                and assigned the name n so that it refers to that object.)<br>
+                >>> def my_function(): ...     print("Hello!") (If we run this code
+                , it creates a function object in memory, and sets the name 
+                my_function to refer to that object.)<br>
+            </td>
+        </tr>
+        <tr>
+            <td>isinstance(object, type)</td>
+            <td>
+                Returns True if the specified object is of the specified type, 
+                otherwise False.
+            </td>
+            <td>
+                class myObj:<br>
+                name = "John"<br>
+                y = myObj()<br>
+                x = isinstance(y, myObj)<br>
+                print(x) --> True
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Last updated: 5/2020</td>
+        </tr>
+    </tfoot>
+</table>
+<script src="js/o&c.js"></script>
+</body>
+</html>
