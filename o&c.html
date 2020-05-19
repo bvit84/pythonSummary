@@ -93,6 +93,9 @@
                 being created:<br>
                 >>> __init__(self, name) will require name variable when calling the 
                 class.<br>
+                Class definitions cannot be empty, but if you for some reason have a class 
+                definition with no content, put in the pass statement to avoid getting an 
+                error.
             </td>
             <td>
                 <img src="media\initEx1.jpg" alt="__init__() function example"><br>
@@ -102,6 +105,31 @@
                 It does not have to be named self , you can call it whatever you 
                 like, but it has to be the first parameter of any function in the 
                 class.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                class Student(Person):<br>
+                Python Inheritance<br>
+                When you add the __init__() function, the child class will no longer 
+                inherit the parent's __init__() function.<br>
+                class Student(Person):<br>
+                def __init__(self, fname, lname):<br>
+                super().__init__(fname, lname)
+            </td>
+            <td>
+                Python also has a super() function that will make the child class 
+                inherit all the methods and properties from its parent.<br>
+                By using the super() function, you do not have to use the name of the 
+                parent element, it will automatically inherit the methods and properties 
+                from its parent.
+            </td>
+            <td>
+                To keep the inheritance of the parent's __init__() function, add a call 
+                to the parent's __init__() function:<br>
+                class Student(Person):<br>
+                def __init__(self, fname, lname):<br>
+                Person.__init__(self, fname, lname)
             </td>
         </tr>
     </tbody>
